@@ -1,0 +1,67 @@
+/*--------All Elements--------*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*----Top Page Containers----*/
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(230, 230, 230);
+}
+
+/*----Main Content----*/
+.main-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.grid-container{
+    width: 600px;
+    height: 600px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.square-row{
+    display: flex;
+}
+
+.square-cell{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.square-row, .square-cell{
+    flex-grow: 1;
+}
+
+/*-------Buttons-------*/
+#resize-grid{
+    cursor: pointer;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(139, 139, 255);
+    color: rgb(230, 230, 230);
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+#resize-grid:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px rgb(78, 78, 78);
+}
